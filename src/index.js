@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './styles/main.scss';
 import reportWebVitals from './reportWebVitals';
+import Card from './components/Card';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Card
+      art= {require("./images/image-equilibrium.jpg")}
+      name="Equilibrium #3429"
+      description="Our Equilibrium collection promotes balance and calm."
+      price="0.041"
+      eta="3 days"
+      avatar= {require("./images/image-avatar.png")}
+      author="Jules Wyvern"
+    />
   </React.StrictMode>,
   document.getElementById('root')
 );
