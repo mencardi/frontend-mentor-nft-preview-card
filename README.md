@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://frontend-mentor-nft-preview-card.netlify.app/)
+- Solution URL: [Add solution URL here](https://mencardi-fm-nft-preview-card.netlify.app/)
 
 ## My process
 
