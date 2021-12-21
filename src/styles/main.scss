@@ -1,0 +1,11 @@
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/common';
+
+body{
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 0 5%;
+}

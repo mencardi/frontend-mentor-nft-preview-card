@@ -1,0 +1,51 @@
+@use "sass:math";
+
+@mixin tipo($media) {
+  @if $media==mobile {
+    @media only screen and (min-width: 375px) {
+      @content;
+    }
+  }
+
+  @else if $media==desktop {
+    @media only screen and (min-width: 1440px) {
+      @content;
+    }
+  }
+
+}
+
+@mixin flex($ai, $jc, $fd: row) {
+  display: flex;
+  flex-direction: $fd;
+  align-items: $ai;
+  justify-content: $jc;
+}
+
+@function rem($size) {
+  @return #{math.div($size, $f-base)}rem;
+}
+
+@function em($ez, $fz) {
+  @return #{math.div($ez, $fz)}em;
+}
+
+@function lineHeight($size, $lh) {
+  @return math.div($lh, $size);
+}
+
+%pseudo{
+  content: '';
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+%icon {
+  &::before{
+    @extend %pseudo;
+    background-size: contain;
+    margin-right: rem(8);
+  }
+}
+
